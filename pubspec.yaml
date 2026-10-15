@@ -1,0 +1,53 @@
+name: sightassist
+description: "SightAssist - AI Eyes for the Visually Impaired"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management & Architecture
+  provider: ^6.1.2
+
+  # Hardware & Sensor Access
+  camera: ^0.11.0+2
+  permission_handler: ^11.3.1
+  vibration: ^2.0.1
+  path_provider: ^2.1.5
+
+  # Speech & Audio
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.2
+
+  # AI & Vision
+  google_generative_ai: ^0.4.6
+  google_mlkit_text_recognition: ^0.14.0
+  image: ^4.5.2
+
+  # Storage & Network
+  shared_preferences: ^2.3.2
+  flutter_dotenv: ^5.2.1
+  http: ^1.2.2
+  uuid: ^4.5.1
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/icons/
+    - assets/sounds/
+    - assets/images/
